@@ -19,6 +19,8 @@ const Wrapper = styled.div`
   p {
     font-weight: bold;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 `;
 
