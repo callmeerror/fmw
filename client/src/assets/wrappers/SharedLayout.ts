@@ -24,9 +24,8 @@ const Wrapper = styled.div`
     padding: 0 8px;
     z-index: 1236;
     .logo {
-      height: 40px;
-      width: 135px;
-      margin: 0 30px;
+      height: 36px;
+      margin: 0 140px 0 20px;
       cursor: pointer;
     }
     .toggle-btn {

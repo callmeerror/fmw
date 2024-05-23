@@ -30,12 +30,12 @@ const UserCircle: React.FC<UserCircleProps> = ({ className }) => {
     <Wrapper className={className} ref={panelRef}>
       <img
         alt='avt'
-        src={process.env.PUBLIC_URL + '/99225206_p0.png'}
+        src={process.env.PUBLIC_URL + '/vergil_chair.jpg'}
         onClick={() => setUserPanel((show) => !show)}
       />
       <div className={userPanel ? 'imagine imagine-show' : 'imagine'}>
         <div className='user-name'>
-          <img alt='avt' src={process.env.PUBLIC_URL + '/99225206_p0.png'} />
+          <img alt='avt' src={process.env.PUBLIC_URL + '/vergil_chair.jpg'} />
           <span>{user?.name}</span>
         </div>
         <div className='sep' />

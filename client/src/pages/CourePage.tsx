@@ -89,18 +89,6 @@ const CoursePage: React.FC = () => {
     }
   }, [status, authClient, courseId]);
 
-  if (status === 'loading')
-    return (
-      <Loading
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: 'calc(100vh - 120px)',
-        }}
-      />
-    );
-
   const handleAddBtnClicked = () => {
     setAction({
       action: 'add',
@@ -233,6 +221,18 @@ const CoursePage: React.FC = () => {
 
     setFormLoading(false);
   };
+
+  if (status === 'loading')
+    return (
+      <Loading
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: 'calc(100vh - 120px)',
+        }}
+      />
+    );
 
   return (
     <Wrapper>
